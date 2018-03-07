@@ -1,4 +1,4 @@
-// const app = "I don't do much.";
+
 // let xhr = new XMLHttpRequest();
 // xhr.open('GET', 'https://api.github.com/repos/jquery/jquery/commits');
 // xhr.responseType = 'json';
@@ -10,9 +10,10 @@
 // xhr.onerror = function() {
 //   console.log('Booo');
 // };
+// 
+// xhr.send();
 
-xhr.send();
-
+// fetch produces the same output as the above XHR code
 fetch('https://api.github.com/repos/jquery/jquery/commits')
   .then(res => res.json()) // give me the body of the response parsed as JSON
   .then(json => console.log(json));
