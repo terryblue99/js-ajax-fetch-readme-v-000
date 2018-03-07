@@ -6,7 +6,7 @@ xhr.responseType = 'json';
 xhr.onload = function() {
   console.log(xhr.response);
 };
- 
+ 
 xhr.onerror = function() {
   console.log('Booo');
 };
