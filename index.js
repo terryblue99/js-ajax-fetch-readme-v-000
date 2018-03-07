@@ -13,6 +13,7 @@
 //
 // xhr.send();
 
+//'fetch' produces the same output as the above XHR code
 const token = '3c22ddb84606fadf0e6da86add01981582dcd559'
 fetch('https://api.github.com/user/repos', {
   headers: {
